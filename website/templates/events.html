@@ -1,5 +1,40 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<h1>Events Calendar</h1>
+<!-- Upcoming Events Section -->
+<section id="events" class="events">
+    <div class="container">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <!-- Event 1 -->
+            <div class="event">
+                <div class="event-thumbnail">
+                    <img src="event1.jpg" alt="Event 1 Thumbnail">
+                </div>
+                <div class="event-details">
+                    <h3>Event 1 Title</h3>
+                    <p class="event-date">Date: January 1, 2025</p>
+                    <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec augue dictum, sed tempus risus eleifend. Donec quis mauris quis nisi porta bibendum nec nec velit.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event">
+                <div class="event-thumbnail">
+                    <img src="event2.jpg" alt="Event 2 Thumbnail">
+                </div>
+                <div class="event-details">
+                    <h3>Event 2 Title</h3>
+                    <p class="event-date">Date: February 15, 2025</p>
+                    <p class="event-description">Phasellus nec nulla id felis feugiat elementum. Ut eget odio sed felis placerat ullamcorper. Integer id sem at purus vestibulum dignissim sit amet id eros.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Add more events as needed -->
+        </div>
+    </div>
+</section>
+
 {% endblock %}
