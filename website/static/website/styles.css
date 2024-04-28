@@ -1,9 +1,27 @@
-.header{
+/* Header */
+header {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 20px;
     text-align: center;
-    border: 2px solid black;
 }
 
-body {
-    padding: 10px;
-    background-color:  #f5f9ee;
-  }
+/* Sections */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Section Headings */
+h2 {
+    color: #007bff; /* Blue heading color */
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 20px;
+    text-align: center;
+}

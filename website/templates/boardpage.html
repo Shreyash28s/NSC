@@ -1,5 +1,38 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<h1>Our Board</h1>
+ <!-- Meet the Boards Section -->
+<section id="boards" class="boards">
+    <div class="container">
+        <h2>Meet the Boards</h2>
+        <div class="board-list">
+            <!-- Board 1 -->
+            <div class="board">
+                <h3>Board 1: Finance</h3>
+                <p class="board-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec augue dictum, sed tempus risus eleifend. Donec quis mauris quis nisi porta bibendum nec nec velit.</p>
+                <ul class="board-members">
+                    <li>Member 1</li>
+                    <li>Member 2</li>
+                    <li>Member 3</li>
+                </ul>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+
+            <!-- Board 2 -->
+            <div class="board">
+                <h3>Board 2: Marketing</h3>
+                <p class="board-description">Phasellus nec nulla id felis feugiat elementum. Ut eget odio sed felis placerat ullamcorper. Integer id sem at purus vestibulum dignissim sit amet id eros.</p>
+                <ul class="board-members">
+                    <li>Member 1</li>
+                    <li>Member 2</li>
+                    <li>Member 3</li>
+                </ul>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+
+            <!-- Add more boards as needed -->
+        </div>
+    </div>
+</section>
+
 {% endblock %}
