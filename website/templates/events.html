@@ -6,54 +6,19 @@
     <div class="page-header">
         <h2>Past Events</h2>
     </div>
-    <!-- event 1 -->
-    <div class="card" style="width: 80rem;">
-        <div class="img-container">
-            <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-758x379,f_auto,q_auto:best/rockcms/2024-04/240422-donald-trump-vl-939a-5b469c.jpg" alt="">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Educational Reform & New Mental Health Policy</h5>
-          <p class="card-text">Following the rapid suicide rate in Mauritius among the youth, the Minister of education alongside the National Students Council worked together on a new mental health policy to better address the problems face by students without our school system.</p>
-          <p class="card-text">After weeks of deliberation and planning, the full day workshop was orchestrated with 5 psychologists & executives of the Ministry in order to assess the upcoming measures that will be implemented.</p>
-          <a href="#" class="btn btn-primary">Learn more</a>
-        </div>
-      </div>
-      <!-- event 2 -->
+    <!-- events -->
+    {%  for event in events %}
     <div class="card" style="width: 80rem;">
         <div class="img-container">
             <img src="https://static.independent.co.uk/2024/05/03/23/AP24124779436042.jpg?quality=75&width=640&crop=3%3A2%2Csmart&auto=webp" alt="">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Offical logos unveiling and stakeholder meetings</h5>
-          <p class="card-text">Following the rapid suicide rate in Mauritius among the youth, the Minister of education alongside the National Students Council worked together on a new mental health policy to better address the problems face by students without our school system.</p>
-          <p class="card-text">After weeks of deliberation and planning, the full day workshop was orchestrated with 5 psychologists & executives of the Ministry in order to assess the upcoming measures that will be implemented.</p>
+          <h5 class="card-title">{{event.title}}</h5>
+          <p class="card-text">{{event.text}}</p>
           <a href="#" class="btn btn-primary">Learn more</a>
         </div>
       </div>
-            <!-- event 3 -->
-    <div class="card" style="width: 80rem;">
-        <div class="img-container">
-            <img src="https://static.independent.co.uk/2024/05/03/13/SEI202449808.jpg?quality=75&width=640&crop=3%3A2%2Csmart&auto=webp" alt="">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Offical logos unveiling and stakeholder meetings</h5>
-          <p class="card-text">Following the rapid suicide rate in Mauritius among the youth, the Minister of education alongside the National Students Council worked together on a new mental health policy to better address the problems face by students without our school system.</p>
-          <p class="card-text">After weeks of deliberation and planning, the full day workshop was orchestrated with 5 psychologists & executives of the Ministry in order to assess the upcoming measures that will be implemented.</p>
-          <a href="#" class="btn btn-primary">Learn more</a>
-        </div>
-      </div>
-            <!-- event 4 -->
-    <div class="card" style="width: 80rem;">
-        <div class="img-container">
-            <img src="https://static.independent.co.uk/2024/05/03/23/AP24124779436042.jpg?quality=75&width=640&crop=3%3A2%2Csmart&auto=webp" alt="">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Offical logos unveiling and stakeholder meetings</h5>
-          <p class="card-text">Following the rapid suicide rate in Mauritius among the youth, the Minister of education alongside the National Students Council worked together on a new mental health policy to better address the problems face by students without our school system.</p>
-          <p class="card-text">After weeks of deliberation and planning, the full day workshop was orchestrated with 5 psychologists & executives of the Ministry in order to assess the upcoming measures that will be implemented.</p>
-          <a href="#" class="btn btn-primary">Learn more</a>
-        </div>
-      </div>
+      {% endfor %}
 </div>
 
 {% endblock %}

@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
+from .models import event
+
 # Create your views here.
 
 def index(request):
@@ -12,7 +15,10 @@ def boardpage(request):
     return render(request, "boardpage.html")
 
 def events(request):
-    return render(request, "events.html")
+    events = event.objects.all()
+    return render(request, "events.html", {
+        'events' : events
+    })
 
 def membership(request):
     return render(request, "membership.html")
